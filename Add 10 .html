@@ -1,0 +1,64 @@
+<html> 
+ <head><title>Add 10</title></head>
+ <body>
+ <b><p>Add 10 Each Time:<p><b>
+ <Input id="btnAdd" type="button" value="Add" onclick="btnAdd_onclick()"><br/>
+ <center><input id="txtNum" type="text"><br/></p></center>
+ <Input id="btnAdd20" type="button" value="Add20" onclick="btnAdd20_onclick()"><br/>
+ <center><input id="txtNum1" type="text"><br/></p></center>
+ <input id="btnAdd30" type="button" value="Add30" onclick="btnAdd30_onclick()"><br/>
+ <center><input id="txtNum2" type="text"/><br/></p></center>
+ <input id="btnAdd40" type="button" value="Add40" onclick="btnAdd40_onclick()"><br/>
+ <center><input id="txtNum3" type="text"/></br></p></center>
+ <input id="btnAdd50" type="button" value="Add50" onclick="btnAdd50_onclick()"><br/>
+ <center><input id="txtNum4" type="text"/></p></center>
+ <input id="btnAdd60" type="button" value="Add60" onclick="btnAdd60_onclick()"><br/>
+ <center><input id="txtNum5" type="text"/></p></center>
+ <input id="btnAdd70" type="button" value="Add70" onclick="btnAdd70_onclick()"><br/>
+ <center><input id="txtNum6" type="text"/></p></center>
+ <input id="btnAdd80" type="button" value="Add80" onclick="btnAdd80_onclick()"><br/>
+ <center><input id="txtNum7" type="text"/></p></center>
+ <input id="btnAdd90" type="button" value="Add90" onclick="btnAdd90_onclick()"><br/>
+ <center><input id="txtNum8" type="text"/></p></center>
+ <input id="btnAdd100" type="button" value="Add100" onclick="btnAdd100_onclick()"><br/>
+ <center><input id="txtNum9" type="text"/></p></center>
+ <input id="btnAddAllBoxes" type="button" value="AddAllBoxes" onclick="btnAddAllBoxes_onclick()"><br/>
+ <center><p id="parResult" type="text" style="background-color: Red; width: 100px;">0</p></center>
+ </body>
+</html>
+
+   <script language="javascript">
+     function btnAdd_onclick(){
+       parResult.innerText = parseInt(txtNum.value) + parseInt("10"); 
+     }
+	 function btnAdd20_onclick(){
+	   parResult.innerText = parseInt(txtNum1.value) + parseInt(parResult.innerText) + parseInt("20");
+	 }
+	 function btnAdd30_onclick(){
+	   parResult.innerText = parseInt(txtNum2.value) + parseInt("30") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd40_onclick(){
+	   parResult.innerText = parseInt(txtNum3.value) + parseInt("40") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd50_onclick(){
+	   parResult.innerText = parseInt(txtNum4.value) + parseInt("50") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd60_onclick(){
+	   parResult.innerText = parseInt(txtNum5.value) + parseInt("60") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd70_onclick(){
+	   parResult.innerText = parseInt(txtNum6.value) + parseInt("70") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd80_onclick(){
+	   parResult.innerText = parseInt(txtNum7.value) + parseInt("80") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd90_onclick(){
+	   parResult.innerText = parseInt(txtNum8.value) + parseInt("90") + parseInt(parResult.innerText);
+	 }
+	 function btnAdd100_onclick(){
+	   parResult.innerText = parseInt(txtNum9.value) + parseInt("100") + parseInt(parResult.innerText);
+	 }
+	 function btnAddAllBoxes_onclick(){
+	   parResult.innerText = parseInt(txtNum.value) + parseInt(txtNum1.value) + parseInt(txtNum2.value) + parseInt(txtNum3.value) + parseInt(txtNum4.value) + parseInt(txtNum5.value) + parseInt(txtNum6.value) + parseInt(txtNum7.value) + parseInt(txtNum8.value) + parseInt(txtNum9.value);
+	 }
+     </script>

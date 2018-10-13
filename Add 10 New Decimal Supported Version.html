@@ -1,0 +1,53 @@
+<html> 
+ <head><title>Add 10</title></head>
+ <body>
+ <h1>Add 10 And The Previous Result Each Time:</h1>
+ <Input id="btnAdd" type="button" value="Add" onclick="btnAdd_onclick()"><br/>
+ <center><input id="txtNum" type="text" placeholder="10 Added"/><br/></p></center><br/><br/><br/>
+ <center><input id="txtNum1" type="text" placeholder="20 Added"/><br/></p></center><br/><br/><br/>
+ <center><input id="txtNum2" type="text" placeholder="30 Added" /><br/></p></center><br/><br/><br/>
+ <center><input id="txtNum3" type="text" placeholder="40 Added" /></br></p></center><br/><br/><br/>
+ <center><input id="txtNum4" type="text" placeholder="50 Added" /></p></center><br/><br/><br/>
+ <center><input id="txtNum5" type="text" placeholder="60 Added" /></p></center><br/><br/><br/>
+ <center><input id="txtNum6" type="text" placeholder="70 Added" /></p></center><br/><br/><br/>
+ <center><input id="txtNum7" type="text" placeholder="80 Added" /></p></center><br/><br/><br/>
+ <center><input id="txtNum8" type="text" placeholder="90 Added" /></p></center><br/><br/><br/>
+ <center><input id="txtNum9" type="text" placeholder="100 Added" /></p></center><br/><br/><br/>
+ 
+ <h1>Results:</h1>
+ <center><p id="parResult" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult1" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult2" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult3" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult4" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult5" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult6" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult7" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult8" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult9" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <h1>Add All Boxes:</h1>
+ <input id="btnAddAllBoxes" type="button" value="AddAllBoxes" onclick="btnAddAllBoxes_onclick()"><br/>
+ <center><p id="parResult10" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ <center><p id="parResult11" type="text" style="background-color: Red; width: 100px;">0</p></center><br/><br/><br/>
+ </body>
+</html>
+
+   <script language="javascript">
+     function btnAdd_onclick(){
+       parResult.innerText = parseFloat(txtNum.value) + parseFloat("10"); 
+	   parResult1.innerText = parseFloat(txtNum1.value) + parseFloat(parResult.innerText) + parseFloat("20");
+	   parResult2.innerText = parseFloat(txtNum2.value) + parseFloat("30") + parseFloat(parResult1.innerText);
+	   parResult3.innerText = parseFloat(txtNum3.value) + parseFloat("40") + parseFloat(parResult2.innerText);
+	   parResult4.innerText = parseFloat(txtNum4.value) + parseFloat("50") + parseFloat(parResult3.innerText);
+	   parResult5.innerText = parseFloat(txtNum5.value) + parseFloat("60") + parseFloat(parResult4.innerText);
+	   parResult6.innerText = parseFloat(txtNum6.value) + parseFloat("70") + parseFloat(parResult5.innerText);
+	   parResult7.innerText = parseFloat(txtNum7.value) + parseFloat("80") + parseFloat(parResult6.innerText);
+	   parResult8.innerText = parseFloat(txtNum8.value) + parseFloat("90") + parseFloat(parResult7.innerText);
+	   parResult9.innerText = parseFloat(txtNum9.value) + parseFloat("100") + parseFloat(parResult8.innerText);
+     }
+	 
+	 function btnAddAllBoxes_onclick(){
+	   parResult10.innerText = parseFloat(txtNum.value) + parseFloat(txtNum1.value) + parseFloat(txtNum2.value) + parseFloat(txtNum3.value) + parseFloat(txtNum4.value) + parseFloat(txtNum5.value) + parseFloat(txtNum6.value) + parseFloat(txtNum7.value) + parseFloat(txtNum8.value) + parseFloat(txtNum9.value);
+	   parResult11.innerText = parseFloat(parResult.innerText) + parseFloat(parResult1.innerText) + parseFloat(parResult2.innerText) + parseFloat(parResult3.innerText) + parseFloat(parResult4.innerText) + parseFloat(parResult5.innerText) + parseFloat(parResult6.innerText) + parseFloat(parResult7.innerText) + parseFloat(parResult8.innerText) + parseFloat(parResult9.innerText);
+	 }
+     </script>
